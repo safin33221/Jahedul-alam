@@ -8,6 +8,7 @@ import {
   Linkedin,
   Mail,
   MapPin,
+  Phone,
   Send,
   Twitter,
 } from "lucide-react";
@@ -114,7 +115,7 @@ export function Contact() {
 
             <div className="flex-1 space-y-6">
               <div className="flex items-start">
-                <div className="mr-4 flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl border border-blue-500/20 bg-blue-500/10 text-blue-400">
+                <div className="mr-4 flex h-12 w-12 shrink-0 items-center justify-center rounded-xl border border-blue-500/20 bg-blue-500/10 text-blue-400">
                   <Mail className="h-6 w-6" />
                 </div>
                 <div>
@@ -123,18 +124,34 @@ export function Contact() {
                     href="mailto:jahedbhuiyan@email.com"
                     className="font-medium text-white transition-colors hover:text-blue-400"
                   >
-                    jahedbhuiyan@email.com
+                    arfinjahed78@gmail.com
                   </a>
                 </div>
+                
+              </div>
+              <div className="flex items-start">
+                <div className="mr-4 flex h-12 w-12 shrink-0 items-center justify-center rounded-xl border border-blue-500/20 bg-green-500/10 text-green-400">
+                  <Phone className="h-6 w-6" />
+                </div>
+                <div>
+                  <p className="mb-1 text-sm text-slate-400">Phone</p>
+                  <a
+                    href="mailto:jahedbhuiyan@email.com"
+                    className="font-medium text-white transition-colors hover:text-blue-400"
+                  >
+                     01742098488
+                  </a>
+                </div>
+                
               </div>
 
               <div className="flex items-start">
-                <div className="mr-4 flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl border border-purple-500/20 bg-purple-500/10 text-purple-400">
+                <div className="mr-4 flex h-12 w-12 shrink-0 items-center justify-center rounded-xl border border-purple-500/20 bg-purple-500/10 text-purple-400">
                   <MapPin className="h-6 w-6" />
                 </div>
                 <div>
                   <p className="mb-1 text-sm text-slate-400">Location</p>
-                  <p className="font-medium text-white">Bangladesh</p>
+                  <p className="font-medium text-white">Dhaka, Bangladesh</p>
                 </div>
               </div>
 
@@ -224,7 +241,7 @@ export function Contact() {
                 </div>
                 <h4 className="mb-2 text-xl font-bold text-white">Thank You!</h4>
                 <p className="text-emerald-200">
-                  Your message has been sent successfully. I'll get back to you
+                  Your message has been sent successfully. I&apos;ll get back to you
                   soon.
                 </p>
               </motion.div>
@@ -320,7 +337,7 @@ export function Contact() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="flex w-full items-center justify-center rounded-xl bg-gradient-to-r from-blue-500 to-purple-600 py-4 text-lg font-medium text-white transition-all hover:shadow-lg hover:shadow-blue-500/25 disabled:cursor-not-allowed disabled:opacity-70"
+                  className="flex w-full items-center justify-center rounded-xl bg-linear-to-r from-blue-500 to-purple-600 py-4 text-lg font-medium text-white transition-all hover:shadow-lg hover:shadow-blue-500/25 disabled:cursor-not-allowed disabled:opacity-70"
                 >
                   {isSubmitting ? (
                     <span className="flex items-center">

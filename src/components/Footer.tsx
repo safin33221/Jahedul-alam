@@ -43,13 +43,7 @@ export function Footer() {
             >
               <Twitter className="h-5 w-5" />
             </Link>
-            <Link
-              href="#"
-              className="text-slate-400 transition-colors hover:text-blue-400"
-              aria-label="GitHub"
-            >
-              <Github className="h-5 w-5" />
-            </Link>
+          
             <a
               href="mailto:hello@example.com"
               className="text-slate-400 transition-colors hover:text-blue-400"
