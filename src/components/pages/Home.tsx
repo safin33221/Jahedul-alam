@@ -64,8 +64,11 @@ export function Home() {
               className="mb-6 text-3xl leading-tight font-bold text-white md:text-5xl"
             >
               Creating Simple &amp; Meaningful{" "}
-              <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
-                Digital Experiences
+              <span className="bg-linear-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+                Digital Experiences With 
+              </span>
+              <span className="bg-linear-to-r from-blue-400 to-purple-500 ml-5 bg-clip-text text-transparent">
+                 Jahedul Alam
               </span>
             </motion.h1>
             <motion.p
@@ -78,7 +81,7 @@ export function Home() {
             <motion.div variants={fadeInUp} className="mb-12 flex flex-wrap gap-4">
               <Link
                 href="/experience"
-                className="rounded-full bg-gradient-to-r from-blue-500 to-purple-600 px-8 py-4 font-medium text-white transition-all hover:shadow-lg hover:shadow-blue-500/25"
+                className="rounded-full bg-linear-to-r from-blue-500 to-purple-600 px-8 py-4 font-medium text-white transition-all hover:shadow-lg hover:shadow-blue-500/25"
               >
                 View Projects
               </Link>
@@ -123,7 +126,7 @@ export function Home() {
               duration: 0.8,
               delay: 0.2,
             }}
-            className="relative hidden h-[500px] lg:block"
+            className="relative hidden h-125 lg:block"
           >
             <div className="absolute inset-0 flex items-center justify-center">
               <motion.div
@@ -137,7 +140,7 @@ export function Home() {
                 }}
                 className="absolute left-10 z-20 h-80 w-64 -rotate-6 transform rounded-2xl border border-white/20 bg-white/10 p-4 shadow-2xl shadow-blue-500/20 backdrop-blur-2xl"
               >
-                <div className="mb-4 h-32 w-full rounded-xl bg-gradient-to-br from-blue-500/40 to-purple-500/40" />
+                <div className="mb-4 h-32 w-full rounded-xl bg-linear-to-r from-blue-500/40 to-purple-500/40" />
                 <div className="mb-3 h-4 w-3/4 rounded-full bg-white/20" />
                 <div className="mb-6 h-4 w-1/2 rounded-full bg-white/20" />
                 <div className="flex gap-2">
@@ -159,7 +162,7 @@ export function Home() {
                 className="absolute top-20 right-0 z-10 h-64 w-72 rotate-12 transform rounded-2xl border border-white/10 bg-white/5 p-4 shadow-xl backdrop-blur-xl"
               >
                 <div className="mb-6 flex items-center gap-3">
-                  <div className="h-10 w-10 rounded-full bg-gradient-to-r from-emerald-400 to-cyan-400" />
+                  <div className="h-10 w-10 rounded-full bg-linear-to-r from-emerald-400 to-cyan-400" />
                   <div>
                     <div className="mb-2 h-3 w-24 rounded-full bg-white/20" />
                     <div className="h-2 w-16 rounded-full bg-white/10" />
@@ -190,7 +193,7 @@ export function Home() {
             variants={fadeInUp}
             className="relative"
           >
-            <div className="absolute inset-0 scale-105 rotate-3 transform rounded-3xl bg-gradient-to-tr from-blue-500 to-purple-500 opacity-50 blur-lg" />
+            <div className="absolute inset-0 scale-105 rotate-3 transform rounded-3xl bg-linear-to-tr from-blue-500 to-purple-500 opacity-50 blur-lg" />
             <Image
               src={PROFILE_IMAGE_URL}
               alt="Jahed Bhuiyan"
@@ -308,7 +311,7 @@ export function Home() {
               }}
             >
               <GlassCard hover className="h-full">
-                <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-xl bg-gradient-to-br from-blue-500/20 to-purple-500/20 text-blue-400">
+                <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-xl bg-linear-to-r from-blue-500/20 to-purple-500/20 text-blue-400">
                   <skill.icon className="h-7 w-7" />
                 </div>
                 <h3 className="mb-3 text-xl font-semibold text-white">
@@ -377,7 +380,7 @@ export function Home() {
             >
               <GlassCard hover className="flex h-full flex-col p-4">
                 <div
-                  className={`relative mb-6 h-48 overflow-hidden rounded-xl bg-gradient-to-br ${project.gradient}`}
+                  className={`relative mb-6 h-48 overflow-hidden rounded-xl bg-linear-to-r ${project.gradient}`}
                 >
                   <div className="absolute inset-4 rounded-lg border border-white/20 bg-white/10 p-4 shadow-xl backdrop-blur-sm">
                     <div className="mb-4 h-3 w-1/3 rounded-full bg-white/30" />
@@ -542,7 +545,7 @@ export function Home() {
             >
               <GlassCard hover className="flex h-full flex-col p-4">
                 <div
-                  className={`mb-6 h-40 rounded-xl bg-gradient-to-br ${post.gradient}`}
+                  className={`mb-6 h-40 rounded-xl bg-linear-to-r ${post.gradient}`}
                 />
                 <div className="flex flex-1 flex-col px-2">
                   <div className="mb-3 flex items-center justify-between">
