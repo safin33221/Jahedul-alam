@@ -45,7 +45,7 @@ const staggerContainer = {
 export function Home() {
   return (
     <div className="flex w-full flex-col">
-      <section className="mx-auto flex min-h-screen w-full max-w-7xl items-center px-4 pt-20 pb-12 sm:px-6 lg:px-8">
+      <section className="mx-auto flex md:min-h-screen w-full max-w-7xl items-center px-4  max-md:pt-20  pb-12 sm:px-6 lg:px-8">
         <div className="grid w-full grid-cols-1 items-center gap-12 lg:grid-cols-2">
           <motion.div
             initial="hidden"
@@ -61,14 +61,39 @@ export function Home() {
             </motion.div>
             <motion.h1
               variants={fadeInUp}
-              className="mb-6 text-3xl leading-tight font-bold text-white md:text-5xl"
+              className="relative mb-6 text-3xl leading-tight font-bold text-white md:text-5xl  "
             >
+              {/* Background blur glow behind the text */}
+              <span className="absolute -inset-1 block blur-3xl bg-gradient-to-r from-blue-500/20 to-purple-600/20 rounded-full " />
+
               Creating Simple &amp; Meaningful{" "}
-              <span className="bg-linear-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
-                Digital Experiences With
+              <span className="relative inline-block">
+                <span className="bg-gradient-to-r from-blue-400 via-cyan-400 to-purple-500 bg-clip-text text-transparent animate-gradient">
+                  Digital Experiences
+                </span>
+                {/* Animated underline that slides in */}
+                <motion.span
+                  initial={{ width: "0%" }}
+                  animate={{ width: "100%" }}
+                  transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
+                  className="absolute -bottom-2 left-0 h-[3px] bg-gradient-to-r from-blue-400 to-purple-500 rounded-full"
+                />
               </span>
-              <span className="bg-linear-to-r from-blue-400 to-purple-500 ml-5 bg-clip-text text-transparent">
-                Jahedul Alam
+              {" "}With{" "}
+              <span className="relative inline-block group">
+                <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent font-extrabold drop-shadow-[0_0_8px_rgba(59,130,246,0.5)]">
+                  Jahedul Alam
+                </span>
+                {/* Soft neon glow on hover */}
+                <span className="absolute -inset-1 rounded-lg bg-gradient-to-r from-blue-500/20 to-purple-500/20 blur-md opacity-0 group-hover:opacity-100 transition duration-300" />
+              </span>
+
+              {/* Decorative floating dot pattern */}
+              <span className="absolute -top-8 -right-6 text-blue-400/30 text-4xl animate-pulse">
+                ✦
+              </span>
+              <span className="absolute bottom-0 left-10 text-purple-400/20 text-2xl animate-bounce">
+                ⚡
               </span>
             </motion.h1>
             <motion.p
@@ -637,7 +662,7 @@ export function Home() {
           transition={{
             duration: 0.6,
           }}
-          className="rounded-3xl border border-white/10 bg-gradient-to-r from-blue-600/20 to-purple-600/20 p-12 text-center backdrop-blur-xl"
+          className="rounded-3xl border border-white/10 bg-linear-to-r from-blue-600/20 to-purple-600/20 p-12 text-center backdrop-blur-xl"
         >
           <h2 className="mb-6 text-4xl font-bold text-white">
             Let&apos;s Create Something Amazing Together
