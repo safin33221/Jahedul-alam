@@ -65,10 +65,10 @@ export function Home() {
             >
               Creating Simple &amp; Meaningful{" "}
               <span className="bg-linear-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
-                Digital Experiences With 
+                Digital Experiences With
               </span>
               <span className="bg-linear-to-r from-blue-400 to-purple-500 ml-5 bg-clip-text text-transparent">
-                 Jahedul Alam
+                Jahedul Alam
               </span>
             </motion.h1>
             <motion.p
@@ -97,17 +97,17 @@ export function Home() {
               className="flex items-center gap-8 text-sm text-slate-400"
             >
               <div className="flex flex-col">
-                <span className="text-2xl font-bold text-white">2+</span>
+                <span className="text-2xl font-bold text-white">1+</span>
                 <span>Years Experience</span>
               </div>
               <div className="h-10 w-px bg-white/10" />
               <div className="flex flex-col">
-                <span className="text-2xl font-bold text-white">15+</span>
+                <span className="text-2xl font-bold text-white">5+</span>
                 <span>Projects</span>
               </div>
               <div className="h-10 w-px bg-white/10" />
               <div className="flex flex-col">
-                <span className="text-2xl font-bold text-white">10+</span>
+                <span className="text-2xl font-bold text-white">3+</span>
                 <span>Happy Clients</span>
               </div>
             </motion.div>
@@ -129,6 +129,7 @@ export function Home() {
             className="relative hidden h-125 lg:block"
           >
             <div className="absolute inset-0 flex items-center justify-center">
+              {/* Floating Card 1 – Dashboard / Stats */}
               <motion.div
                 animate={{
                   y: [-10, 10, -10],
@@ -140,15 +141,39 @@ export function Home() {
                 }}
                 className="absolute left-10 z-20 h-80 w-64 -rotate-6 transform rounded-2xl border border-white/20 bg-white/10 p-4 shadow-2xl shadow-blue-500/20 backdrop-blur-2xl"
               >
-                <div className="mb-4 h-32 w-full rounded-xl bg-linear-to-r from-blue-500/40 to-purple-500/40" />
-                <div className="mb-3 h-4 w-3/4 rounded-full bg-white/20" />
-                <div className="mb-6 h-4 w-1/2 rounded-full bg-white/20" />
-                <div className="flex gap-2">
-                  <div className="h-8 w-8 rounded-full bg-blue-500/50" />
-                  <div className="h-8 w-8 rounded-full bg-purple-500/50" />
+                {/* Chart / Graph area */}
+                <div className="mb-4 h-32 w-full rounded-xl bg-linear-to-br from-blue-500/40 to-purple-500/40 p-2">
+                  <div className="flex h-full items-end gap-1">
+                    <div className="h-10 w-6 rounded bg-white/30" />
+                    <div className="h-16 w-6 rounded bg-white/40" />
+                    <div className="h-8 w-6 rounded bg-white/30" />
+                    <div className="h-20 w-6 rounded bg-white/50" />
+                    <div className="h-12 w-6 rounded bg-white/30" />
+                  </div>
+                </div>
+                {/* Stat rows */}
+                <div className="mb-3 flex items-center justify-between">
+                  <span className="text-xs font-medium text-white/80">Revenue</span>
+                  <span className="text-xs font-bold text-white">$12,340</span>
+                </div>
+                <div className="mb-6 flex items-center justify-between">
+                  <span className="text-xs font-medium text-white/80">Users</span>
+                  <span className="text-xs font-bold text-white">+23%</span>
+                </div>
+                {/* Color legends */}
+                <div className="flex gap-3">
+                  <div className="flex items-center gap-1">
+                    <div className="h-2 w-2 rounded-full bg-blue-400" />
+                    <span className="text-[10px] text-white/60">Desktop</span>
+                  </div>
+                  <div className="flex items-center gap-1">
+                    <div className="h-2 w-2 rounded-full bg-purple-400" />
+                    <span className="text-[10px] text-white/60">Mobile</span>
+                  </div>
                 </div>
               </motion.div>
 
+              {/* Floating Card 2 – Chat / Message Preview */}
               <motion.div
                 animate={{
                   y: [10, -10, 10],
@@ -159,22 +184,45 @@ export function Home() {
                   ease: "easeInOut",
                   delay: 1,
                 }}
-                className="absolute top-20 right-0 z-10 h-64 w-72 rotate-12 transform rounded-2xl border border-white/10 bg-white/5 p-4 shadow-xl backdrop-blur-xl"
+                className="absolute top-20 right-0 z-10 h-72 w-72 rotate-12 transform rounded-2xl border border-white/10 bg-white/5 p-4 shadow-xl backdrop-blur-xl"
               >
-                <div className="mb-6 flex items-center gap-3">
-                  <div className="h-10 w-10 rounded-full bg-linear-to-r from-emerald-400 to-cyan-400" />
+                {/* Chat header with avatar */}
+                <div className="mb-5 flex items-center gap-3">
+                  <div className="relative h-10 w-10 overflow-hidden rounded-full bg-linear-to-r from-emerald-400 to-cyan-400">
+                    <div className="absolute inset-0 flex items-center justify-center text-white font-bold">MS</div>
+                  </div>
                   <div>
-                    <div className="mb-2 h-3 w-24 rounded-full bg-white/20" />
-                    <div className="h-2 w-16 rounded-full bg-white/10" />
+                    <div className="text-sm font-semibold text-white">MR. Safin</div>
+                    <div className="text-[10px] text-emerald-300">Online · Typing...</div>
                   </div>
                 </div>
+                {/* Chat bubbles */}
                 <div className="space-y-3">
-                  <div className="h-12 w-full rounded-lg bg-white/10" />
-                  <div className="h-12 w-full rounded-lg bg-white/10" />
-                  <div className="h-12 w-full rounded-lg bg-white/10" />
+                  <div className="flex justify-start">
+                    <div className="max-w-[80%] rounded-2xl rounded-bl-none bg-white/20 px-3 py-2 text-xs text-white">
+                      Hey, how&apos;s the project going?
+                    </div>
+                  </div>
+                  <div className="flex justify-end">
+                    <div className="max-w-[80%] rounded-2xl rounded-br-none bg-blue-500/50 px-3 py-2 text-xs text-white">
+                      Almost done! 🚀
+                    </div>
+                  </div>
+                  <div className="flex justify-start">
+                    <div className="max-w-[80%] rounded-2xl rounded-bl-none bg-white/20 px-3 py-2 text-xs text-white">
+                      Can you share the update?
+                    </div>
+                  </div>
+                </div>
+                {/* Typing indicator */}
+                <div className="mt-3 flex gap-1">
+                  <div className="h-1.5 w-1.5 animate-bounce rounded-full bg-white/40" />
+                  <div className="h-1.5 w-1.5 animate-bounce rounded-full bg-white/40 [animation-delay:0.2s]" />
+                  <div className="h-1.5 w-1.5 animate-bounce rounded-full bg-white/40 [animation-delay:0.4s]" />
                 </div>
               </motion.div>
 
+              {/* Background blur orbs */}
               <div className="absolute top-10 right-20 h-32 w-32 rounded-full bg-blue-500/30 blur-3xl" />
               <div className="absolute bottom-10 left-20 h-40 w-40 rounded-full bg-purple-500/30 blur-3xl" />
             </div>
@@ -222,7 +270,7 @@ export function Home() {
               className="mb-8 space-y-4 text-lg text-slate-400"
             >
               <p>
-                Hi, I&apos;m Jahed Bhuiyan, a passionate UI/UX designer based in
+                Hi, I&apos;m Jahed, a passionate UI/UX designer based in
                 Bangladesh. I specialize in creating user-centered digital
                 experiences that are both beautiful and functional.
               </p>
